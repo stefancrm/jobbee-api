@@ -5,7 +5,7 @@ const connectDatabase = () => { mongoose.connect(process.env.DB_URI, {
     useUnifiedTopology : true,
     useCreateIndex : true
 }).then(con => {
-    console.log(`MongoDB Database connected with host: ${con.connection.host}`);
+    console.log(`MongoDB Database connected with host: ${conn.connection.host}`);
     });
 };
 
